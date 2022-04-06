@@ -1,0 +1,9 @@
+<a href="{{playlist.external_urls.spotify}}" class="spotify-app-card" *ngFor="let playlist of playlists">
+
+  <div class="spotify-app-card__img-container">
+    <img class="spotify-app-card__img" src="{{images.url}}" *ngFor="let images of playlist.images">
+  </div>
+  <p class="spotify-app-card__text">
+    {{playlist.name}}
+  </p>
+</a>

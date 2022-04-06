@@ -1,0 +1,33 @@
+@import "src/mixins/settings.scss";
+
+.spotify-app-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: $black;
+  margin: 1rem;
+  color: $white;
+  max-width: 250px;
+  text-decoration: none;
+
+  &__text {
+    word-break: break-all;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  &__img-container {
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 250px;
+  }
+}

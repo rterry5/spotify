@@ -1,0 +1,27 @@
+@import "src/mixins/settings.scss";
+
+.spotify-app-display {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: auto;
+
+  &__heading {
+    padding: 1rem;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  &__card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

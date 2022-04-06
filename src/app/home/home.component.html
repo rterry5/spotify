@@ -1,0 +1,8 @@
+<div class="spotify-app-home">
+  <form class="spotify-app-home__form">
+    <input [(ngModel)]="searchQuery" name="search" type="search" (keyup)="searchPlaylists()"
+      class="spotify-app-home__search" placeholder="Search an Playlist">
+  </form>
+
+  <app-display [playlists]="playlists"></app-display>
+</div>

@@ -1,0 +1,26 @@
+@import "src/mixins/settings.scss";
+
+.spotify-app-home {
+  &__form {
+    display: flex;
+    justify-content: center;
+    background-color: $green;
+    padding: 1rem;
+  }
+
+  &__search {
+    padding: 1rem;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+
+    input::placeholder {
+      color: $white;
+      &:focus {
+        color: transparent;
+      }
+    }
+  }
+
+
+}
