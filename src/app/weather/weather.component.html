@@ -1,0 +1,4 @@
+<div class="weather" *ngIf="weather">
+  <p class="weather__details" *ngIf="weather.current">{{weather.current.temp}}</p>
+  <p class="weather__details">{{weather.current.id}}</p>
+</div>

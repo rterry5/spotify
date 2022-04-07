@@ -11,10 +11,10 @@ export class DisplayComponent implements OnInit {
   searchQuery: string;
 
   @Input()
-  artists: any;
+  playlists: any;
 
   @Input()
-  playlists: any;
+  weather: any;
 
   constructor() { }
 

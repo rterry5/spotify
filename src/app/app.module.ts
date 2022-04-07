@@ -13,6 +13,7 @@ import { DisplayComponent } from './display/display.component';
 import { NavComponent } from './nav/nav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './card/card.component';
+import { WeatherComponent } from './weather/weather.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CardComponent } from './card/card.component';
     DisplayComponent,
     NavComponent,
     CardComponent,
+    WeatherComponent,
   ],
   imports: [
     BrowserModule,

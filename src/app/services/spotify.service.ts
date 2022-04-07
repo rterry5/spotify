@@ -18,8 +18,6 @@ export class SpotifyService {
 
   constructor(private http: HttpClient) { }
 
-//get all playlists
-
   getAllArtists(searchQuery: string) {
     let playlistUrl = `https://api.spotify.com/v1/search?query=${searchQuery}&offset=0&limit=20&type=artist`
     return this.http.get(playlistUrl, this.httpOptions);
